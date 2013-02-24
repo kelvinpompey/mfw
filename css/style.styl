@@ -43,12 +43,18 @@ a {
     background-color: #383838
 }
 
-#sidebar ul li {
-    list-style-type: none;
-    border-bottom: solid 0px silver, 60%;
-    padding: 20px;
-    text-align: center;
-}
+#sidebar
+  ul 
+    li
+      list-style-type: none
+      border-bottom: solid 0px silver, 60%
+      padding: 20px
+      text-align: center
+      a
+        color: white
+      a:hover
+        text-decoration: underline
+
 
 #sidebar ul li#facebook {
     border-bottom: none 1px silver;
@@ -128,3 +134,10 @@ header {
     border-top: solid 5px black;
     border-bottom: solid 5px black;
 }
+
+form
+  input[type=submit]
+    float: right;
+    border: none;
+    font-size: 18px;
+    padding: 5px;
