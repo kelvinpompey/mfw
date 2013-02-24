@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>MFW</title>
+		<title>MFW</title>        
+        <link rel='stylesheet' href="css/bootstrap.css" type="text/css" />
         <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <script src="jquery.js"></script>
-        <script src="bootstrap.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
         <!-- <script src="workit-reload.js"></script> -->
 	</head>
 	<body>
@@ -43,14 +44,29 @@
                 <img src="images/ras_collection.png" id="rascollection"/>
                 <img src="images/dude.png" />
 			</div>
-			<div id="imageslider">
-                <div id="previous">&lt;</div>
-                <img src="images/model1.png" />
-                <img src="images/model2.png" />
-                <img src="images/model3.png" />
-                <img src="images/model4.png" />
-                <img src="images/model5.png" />
-                <div id="next">&gt;</div>
+			<div id="imageslider" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="images/model1.png" />
+            <img src="images/model2.png" />
+            <img src="images/model3.png" />
+            <img src="images/model4.png" />
+            <img src="images/model5.png" />            
+          </div>
+          <div class="item">
+            <img src="images/model1.png" />
+            <img src="images/model2.png" />
+            <img src="images/model3.png" />
+            <img src="images/model4.png" />
+            <img src="images/model5.png" />            
+          </div>           
+        </div>
+      <a class="carousel-control left" href="#imageslider" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#imageslider" data-slide="next">&rsaquo;</a>        
+        
+      </div>
+        
+
 
 			</div>
 		</div>
