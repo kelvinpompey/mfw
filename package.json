@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "workit"
+    "start": "workit -p 3100"
   },
   "dependencies": {
     "workit": "*"    
