@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "workit -p 3000"
+    "start": "node app"
   },
   "dependencies": {
-    "workit": "*"    
+    "express": "3.1.0",
+    "jade": "*"
   }
 }
