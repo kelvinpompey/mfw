@@ -2,10 +2,15 @@ extends layout
 
 block content
     #main
-        #coverimage
-            img(src='images/ras_collection.png', id="rascollection")
-            img(src='images/dude.png')
-        #imageslider(class="carousel slide")
+        #coverimage(class="carousel slide")
+            .carousel-inner
+                .item(class='active')
+                    img(src='images/ras1.png')
+                .item(
+                    img(src="images/ras2.png")
+            a(class="carousel-control left",href="#coverimage", data-slide="prev") ‹
+            a(class="carousel-control right",href="#coverimage", data-slide="next") ›
+        #imageslider(class="carousel slide",data-interval="false")
             .carousel-inner
                 each image, index in images
                     if index == 0
