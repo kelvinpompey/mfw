@@ -5,8 +5,12 @@
   "scripts": {
     "start": "node app"
   },
+  "jam": {
+      "baseUrl":"public",
+      "packageDir":"public/libs"
+  },
   "dependencies": {
-    "express": "3.1.0",
+    "express": "3.1.0",    
     "jade": "*", 
     "sugar": "*"
   }
