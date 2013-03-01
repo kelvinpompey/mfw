@@ -36,16 +36,25 @@ a {
   width: 170px;
   height: 900px;
   background-color: #383838;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 #sidebar ul li {
   list-style-type: none;
-  border-bottom: solid 0px #c0c0c0, 60%;
   padding: 20px;
   text-align: center;
+
 }
 #sidebar ul li a {
   color: #fff;
+
 }
+
+#sidebar ul li.textitem {
+    border-bottom: solid 1px #c0c0c0;
+
+}
+
 #sidebar ul li a:hover {
   text-decoration: underline;
 }
@@ -137,8 +146,7 @@ a.carousel-control.right {
 
 a.carousel-control.left {
     left: 0px; 
-    text-align: left; 
-    
+    text-align: left;     
 }
 
 
