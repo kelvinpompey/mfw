@@ -8,8 +8,10 @@ block content
                     img(src='images/ras1.png')
                 .item(
                     img(src="images/ras2.png")
-            a(class="carousel-control left",href="#coverimage", data-slide="prev") ‹
-            a(class="carousel-control right",href="#coverimage", data-slide="next") ›
+            a(class="carousel-control left",href="#coverimage", data-slide="prev")
+                img(src='/images/left-arrow.png')
+            a(class="carousel-control right",href="#coverimage", data-slide="next")
+                img(src='/images/right-arrow.png')
         #imageslider(class="carousel slide",data-interval="false")
             .carousel-inner
                 each image, index in images
@@ -19,5 +21,7 @@ block content
                     else
                         div(class="item")
                             img(src=image.src)
-            a(class="carousel-control left", href="#imageslider", data-slide="prev") ‹
-            a(class="carousel-control right", href="#imageslider", data-slide="next") ›
+            a(class="carousel-control left", href="#imageslider", data-slide="prev")
+                img(src='/images/left-arrow.png')
+            a(class="carousel-control right", href="#imageslider", data-slide="next")
+                img(src='/images/right-arrow.png')

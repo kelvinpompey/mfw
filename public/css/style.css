@@ -84,9 +84,9 @@ header {
   background-color: #383838;
 }
 #imageslider {
-  background-color: #323232;
+  background-color: rgb(221,224,232);
   position: relative;
-  height: 425px;
+  /*height: 425px; */ 
   width: 1108px;
 }
 #previous {
@@ -107,10 +107,10 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-#imageslider img {
+#imageslider .item img {
   float: left;
-  border-top: solid 5px #000;
-  border-bottom: solid 5px #000;
+  border-top: solid 0px #000;
+  border-bottom: solid 0px #000;
   margin-left: 35%;
 }
 form input[type=submit] {
@@ -119,3 +119,22 @@ form input[type=submit] {
   font-size: 18px;
   padding: 5px;
 }
+
+a.carousel-control {
+    display: none; 
+    border: none;
+    background-color: transparent; 
+    vertical-align: middle; 
+    top: 45%; 
+}
+
+a.carousel-control.right {
+    right: 0px; 
+    text-align:right; 
+}
+
+a.carousel-control.left {
+    left: 0px; 
+    text-align: left; 
+}
+
