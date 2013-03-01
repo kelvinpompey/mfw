@@ -111,8 +111,10 @@ header {
   float: left;
   border-top: solid 0px #000;
   border-bottom: solid 0px #000;
-  margin-left: 35%;
+  margin-left: 0%;
 }
+
+
 form input[type=submit] {
   float: right;
   border: none;
@@ -136,5 +138,7 @@ a.carousel-control.right {
 a.carousel-control.left {
     left: 0px; 
     text-align: left; 
+    
 }
+
 

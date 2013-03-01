@@ -13,7 +13,11 @@ exports.index = function(req, res){
         {src: '/images/model4.png'}, 
         {src: '/images/model5.png'}, 
     ];
-    res.render('index', { images: images.randomize() });
+    
+    var groups = images.randomize().inGroupsOf(5);  
+    console.log(groups); 
+    
+    res.render('index', { groups: images.randomize().inGroupsOf(5) });
 };
 
 exports.about = function(req, res) {

@@ -5073,8 +5073,12 @@ a.thumbnail:focus {
 }
 .carousel-indicators {
   position: absolute;
+  /*
   top: 15px;
   right: 15px;
+  */ 
+  bottom: 15px; 
+  right: 50%;   
   z-index: 5;
   margin: 0;
   list-style: none;
