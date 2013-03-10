@@ -2,11 +2,13 @@ doctype 5
 html
   head
     title MFWApparel
+    meta(name="viewport", content="width=device-width, initial-scale=1,minimum-scale=1")    
     link(rel='stylesheet', href="/css/bootstrap.css")
     link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/small.css', media="only screen and (max-width: 480px)")
     script(src="/js/jquery.js")
     script(src="/js/bootstrap.js")
-    script(src="https://raw.github.com/bradbirdsall/Swipe/master/swipe.min.js")
+    script(src="/js/jquery.hammer.js")
     //script(src="libs/require.js")
     script(src='/js/main.js')
   body
