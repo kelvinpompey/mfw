@@ -4,13 +4,15 @@ html
     title MFWApparel
     meta(name="viewport", content="width=device-width, initial-scale=1,minimum-scale=1")    
     link(rel='stylesheet', href="/css/bootstrap.css")
-    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/style.css', media="only screen and (min-width: 1024px)")
     link(rel='stylesheet', href='/css/small.css', media="only screen and (max-width: 480px)")
     script(src="/js/jquery.js")
     script(src="/js/bootstrap.js")
     script(src="/js/jquery.hammer.js")
+    script(src="/js/fastclick.js")
     //script(src="libs/require.js")
     script(src='/js/main.js')
+    script(src='js/small.js')
   body
     header
         a(href="/")
