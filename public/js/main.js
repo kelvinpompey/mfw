@@ -12,5 +12,10 @@ $(document).ready(function(){
     
     $(".carousel").mouseleave(function(evt){
         $(this).find(".carousel-control").fadeOut();         
-    });                     
+    });            
+    
+    
+    
+
+
 });
