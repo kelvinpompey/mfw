@@ -37,7 +37,7 @@ header{
 
 
 #main {
-      
+    width: 65%;   
     float: left; 
 }
 
@@ -46,6 +46,7 @@ header{
   
   
   -webkit-transition: left 0.3s;    
+  width: 35%; 
   float: left;   
   /*height: 900px;*/ 
   background-color: #383838;
@@ -55,7 +56,8 @@ header{
 }
 #sidebar ul li {
   list-style-type: none;
-  padding: 20px;
+  padding: 15px;
+  font-size: 20px; 
   text-align: center;
 
 }
@@ -81,7 +83,7 @@ header{
 
 #imageslider {
     background-color: rgb(221,224,232); 
-    width: 200px; 
+    width: 100%; 
 }
 #imageslider .item img {
     margin: auto; 
@@ -108,7 +110,7 @@ a.carousel-control.left {
 }
 
 .hide-sidebar {
-    width: 15%; 
+    width: 5%; 
 }
 
 .show-sidebar {
@@ -116,7 +118,7 @@ a.carousel-control.left {
 }
 
 .max-main {
-    width: 85%;    
+    width: 100%;    
 }
 
 .min-main {

@@ -38,6 +38,7 @@ header{
 
 #main {        
     float: left; 
+    width: 85%; 
 }
 
 
@@ -45,6 +46,7 @@ header{
   
   
   -webkit-transition: left 0.3s;        
+  width: 15%; 
   float: left;   
   /*height: 900px;*/ 
   background-color: #383838;
@@ -55,6 +57,7 @@ header{
 #sidebar ul li {
   list-style-type: none;
   padding: 20px;
+  font-size: 15px; 
   text-align: center;
 
 }
@@ -114,13 +117,13 @@ a.carousel-control.left {
 }
 
 .show-sidebar {
-    width: 35%; 
+    width: 15%; 
 }
 
 .max-main {
-    width: 85%;    
+    width: 100%;    
 }
 
 .min-main {
-    width: 65%; 
+    width: 85%; 
 }

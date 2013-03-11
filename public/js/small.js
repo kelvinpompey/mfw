@@ -37,25 +37,28 @@ $(document).ready(function(){
         $(".carousel").hammer().on('swiperight', function(evt){
             $(this).carousel('prev'); 
         });         
-        
-        $("#sidebar").addClass('hide-sidebar'); 
-        $("#main").addClass('max-main'); 
+                
         $("#logo").on('click', function(evt){
-            evt.preventDefault();                        
-            if($("#sidebar").hasClass('hide-sidebar')) {
-                $("#sidebar").removeClass('hide-sidebar'); 
-                $("#sidebar").addClass('show-sidebar'); 
-                $("#main").addClass("min-main"); 
-                $("#main").removeClass("max-main");
+            evt.preventDefault();
+            $("#sidebar").toggle();                 
+            if($("#sidebar").css('display') !== 'block') {
+                $("#main").css('width', '100%'); 
             }
             else {
-                $("#sidebar").removeClass('show-sidebar'); 
-                $("#sidebar").addClass('hide-sidebar');                 
-                $("#main").addClass("max-main"); 
-                $("#main").removeClass("min-main");
+                $("#main").css('width', window.innerWidth < 768 ? '65%' : '85%'); 
             }
-            
         }); 
+        
+        $("li a[href='/about']").click(function(evt){
+            evt.preventDefault(); 
+            $("#main").html('<h1>about</h1>')
+        });
+        
+        $("li a[href='/contact']").click(function(evt){
+            evt.preventDefault();
+            $("#main").html('<h1>Contact</h1>')            
+        });        
+        
     }
     else {
         $("#coverimage").each(function(index, carousel){
