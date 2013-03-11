@@ -5,7 +5,7 @@ $(document).ready(function(){
     
     if(window.innerWidth <= 1024) {
         
-        new FastClick(document.body); 
+        new FastClick(document.body);         
         
         $("#imageslider .carousel-inner .item img").slice(1).each(function(index, img){
             var elem = $("<div>", {
@@ -28,7 +28,26 @@ $(document).ready(function(){
                 width: $(indicators).children().length * 15
             }); 
         });         
-            
+
+        var contact = function() {
+            alert('contact')
+        }; 
+        
+        var about = function() {
+            alert('about'); 
+        }
+        
+        var home = function() {
+            window.reload(); 
+            router.setRoute('/'); 
+        }
+        var routes = {
+            "/":"home",
+            "/contact": "contact", 
+            "/about" : "about"
+        }
+        
+        var router = Router(routes).init();   
         
         
         $(".carousel").hammer().on('swipeleft', function(evt){
@@ -40,6 +59,7 @@ $(document).ready(function(){
                 
         $("#logo").on('click', function(evt){
             evt.preventDefault();
+            
             $("#sidebar").toggle();                 
             if($("#sidebar").css('display') !== 'block') {
                 $("#main").css('width', '100%'); 
@@ -49,15 +69,19 @@ $(document).ready(function(){
             }
         }); 
         
-        $("li a[href='/about']").click(function(evt){
-            evt.preventDefault(); 
-            $("#main").html('<h1>about</h1>')
-        });
+        //$("li a[href='/about']").click(function(evt){
+            //evt.preventDefault(); 
+            //router.setRoute('/about'); 
+            //$("#main").html('<h1>about</h1>')
+        //});
         
-        $("li a[href='/contact']").click(function(evt){
-            evt.preventDefault();
-            $("#main").html('<h1>Contact</h1>')            
-        });        
+        //$("li a[href='/contact']").click(function(evt){
+            //evt.preventDefault();
+            //router.setRoute('/contact');             
+            //$("#main").html('<h1>Contact</h1>')            
+        //});   
+        
+      
         
     }
     else {
