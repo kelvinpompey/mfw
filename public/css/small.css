@@ -124,3 +124,24 @@ a.carousel-control.left {
 .min-main {
     width: 65%; 
 }
+
+#main.about p {
+    padding-left: 10px;
+    width: 80%;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+
+#main.about img {
+    float: left; 
+    width:35%; 
+    padding: 10px;
+}
+
+#main.about .quote {
+    width: 50%;
+    margin-left: 15%;
+    font-style: italic;
+    text-shadow: 1px 1px 4px rgb(253, 253, 253);
+}

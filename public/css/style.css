@@ -88,11 +88,18 @@ header {
 #coverimage {
   background-color: #c7cad3;
   height: 550px;
+  width:102%; 
 }
 #main {
   float: left;
+  width: 85%; 
   background-color: #383838;
 }
+
+#main * {
+    padding-left: 0px; 
+}
+
 #imageslider {
   background-color: rgb(221,224,232);
   position: relative;
@@ -151,4 +158,45 @@ a.carousel-control.left {
     text-align: left;     
 }
 
+address{
+    margin-left: 10px; 
+    line-height: 10px;
+}
+#main.about {
+    line-height: 20px; 
+}
+#main.about h1 {
+    width: 100%; 
+}
+
+#main.about * {
+    padding-left: 10px; 
+}
+
+#main.about img {
+    float: left; 
+    width:15%; 
+    padding: 10px;
+}
+
+#main.about p {
+    padding-left: 10px;
+    width: 80%;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+#main.about .quote {
+    width: 25%;
+    margin-left: 25%;
+    font-style: italic;
+    text-shadow: 1px 1px 4px rgb(253, 253, 253);
+}
+
+#main.about p.percent80 {
+    width: 80%; 
+}
+#main.about p.fill {
+    width: 95%; 
+}
 
